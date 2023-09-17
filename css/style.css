@@ -1,8 +1,23 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    margin-top: 22px;
 }
 
 h1{
     text-align: center;
+    color:rgb(68, 68, 102);
+}
+
+h1{
+    margin-bottom: 22px;
+}
+
+.main > div{
+    float: left;
+    margin-right: 15px;
 }
