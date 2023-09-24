@@ -61,3 +61,63 @@ body{
     color: #000;
     background-color: #ffaa7f;
 }
+
+
+/*  MEDIA QUERIES SCREEN SIZE 700PX  */
+
+
+   
+    
+
+
+
+
+    @media screen and (min-width: 768px)  {
+
+        .container{
+            overflow: auto;
+        }
+
+        .card-1{
+            width: 48%;
+            float: left;
+            
+    
+        }
+
+        .card-2{
+            width: 48%;
+            float: right;
+        }
+
+        .card-3{
+            clear: both;
+        }
+        
+    }
+
+
+    @media screen and (min-width: 992px)  {
+
+        .container{
+            overflow: auto;
+        }
+
+        .card{
+            width: 31.4%;
+            float: left;
+            
+    
+        }
+
+        .card-2{
+            margin: 0px 27px ;
+        }
+
+        .card-3{
+            clear: none;
+        }
+
+      
+    }
+
