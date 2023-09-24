@@ -1,26 +1,63 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
-.main{
-    margin-top: 22px;
-    padding: 0px 15px 15px 15px;
-}
 
-h1{
+.title{
     text-align: center;
-    color:rgb(68, 68, 102);
+    font-weight: bold;
+    margin-top: 22px;
 }
 
-h1{
-    margin-bottom: 22px;
+body{
+    font-family: 'Inclusive Sans', sans-serif;
 }
 
-.main > div{
-    float: left;
-    margin-right: 10px;
-    width: 33.333333333%;
+.container{
+    margin: 25px;
+}
+
+/* STYLES TO CARDS */
+
+.card{
+    border: solid 2px #000;
+    margin: 0px 0px 22px 0px;
     
+}
+
+
+.card-title{
+    overflow: auto;
+}
+
+.cat-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 40%;
+    float: right;
+    background-color: #ff8183;
+    color: #fff;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 2px;
+    border-left: solid 2px #000;
+    border-bottom: solid 2px #000;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.description{
+    padding: 12px;
+}
+
+.card-2 .cat-title{
+    color: #fff;
+    background-color:#aa4143;
+}
+
+.card-3 .cat-title{
+    color: #000;
+    background-color: #ffaa7f;
 }
