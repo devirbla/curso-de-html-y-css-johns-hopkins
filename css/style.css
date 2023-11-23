@@ -15,8 +15,46 @@ body{
     font-family: 'Inclusive Sans', sans-serif;
 }
 
-.container{
-    margin: 25px;
+.logo{
+    padding-left: 8px;
+}
+
+.name{
+    padding-top: 12px;
+}
+.container-box{
+    padding: 35px 0px 35px 0px ;
+}
+
+.phone{
+    font-weight: bold;
+    margin-top: 21px;
+}
+
+.mobile-phone{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #aa4143;
+}
+
+.order-online{
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 12px;
+    color: #aa4143;
+}
+
+.navigation-block{
+    display: flex;
+}
+
+
+
+.container-cards{
+    width: 90%;
+    margin: auto;
+    
 }
 
 /* STYLES TO CARDS */
@@ -62,6 +100,12 @@ body{
     background-color: #ffaa7f;
 }
 
+.clear{
+    clear: both;
+    clear: right;
+    
+}
+
 
 
 
@@ -69,13 +113,9 @@ body{
 /*  MEDIA QUERIES SCREEN SIZE 700PX  */
 
 
-   
-    
-
-
-
-
     @media screen and (min-width: 768px)  {
+
+   
 
         .container{
             overflow: auto;
@@ -102,6 +142,16 @@ body{
 
     @media screen and (min-width: 992px)  {
 
+        .logo{
+            margin-left: -20px;
+        }
+
+        
+
+        .mobile-phone{
+            display: none;
+        }
+
         .container{
             overflow: auto;
         }
@@ -122,5 +172,31 @@ body{
         }
 
       
+    }
+
+    @media screen and (max-width: 992px)  {
+
+        .nav-item{
+            background-color: #ff8183;
+            text-align: center;
+            border: 1px solid;
+        }
+
+        .nav-item a{
+            color: gray;
+        }
+
+        .navbar-toggler{
+            margin-bottom: 5px;
+
+        }
+
+        .nav-item:hover{
+            color: white !important;
+            background-color: #aa4143;
+        }
+        .phone{
+            display: none;
+        }
     }
 
