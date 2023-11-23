@@ -5,126 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 3 Solution to grade</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom-style.css"
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<style>
+  .header-content{
+    background-color: #941216;
+    padding: 12px 0px 12px 0px;
+  }
+
+  .phonenumb{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .menu-list{
+    font-size: 1.4rem;
+    float: right;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: unset;
+  }
+
+  .bold{
+    font-weight: bolder;
+  }
+
+  .main{
+    padding: 25px 0px 25px 0px;
+  }
+
+  .contentbox{
+    margin: auto;
+  }
+
+  .title-1{
+    text-align: center;
+  }
+
+  .card-block {
+    margin-bottom: 25px;
+  }
+
+  .btn-link{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(155,38,3);
+  }
+  .btn-link a{
+    text-decoration: none !important;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+  a:hover{
+    color: #fff;
+
+  }
+
+  .card-header{
+    color: #941216;
+  }
+
+  .card-title{
+    color: rgb(61,78,10);
+  }
+
+  .copyright{
+    text-align: center;
+    color: #941216;
+  }
+
+
+  @media screen and (max-width: 768px) {
+  /* Styles applied when the viewport width is 600px or less */
+  body {
+    background-color: lightblue;
+  }
+
+  .menu-list ul{
+    background-color: #CA3D26;
+    border-radius: 5px;
+  }
+
+  .menu-list li{
+    border-bottom: solid 1px;
+  }
+
+  .menu-list li:hover{
+    background-color:#941216;
+    opacity: 1.9;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Styles applied when the viewport width is 600px or less */
+ 
+}
+
+
+  
+
+    
+  
+
+</style>
+
+
+
 
 </head>
 <body>
-    <div class="container-box">
-        <div class="mobile-phone">Phone: 702-582-5632</div>
-    <header class="navigation-block container-lg  ">
+  <div class="main-content">
+    <!-- HEADER -->
+    <header class="header-content">
+      <div class="phonenumb">702-504-8547</div>
+      <nav class="navbar navbar-expand-md navbar-dark " >
         
-        <div class="logo col navbar-brand"><h1 class="name">Restaurant LLC</h1></div>
-        <div class="navigation nav">
-
-            <nav class="navbar navbar-expand-lg  " aria-label="Fifth navbar example">
-                <div class="container-fluid">
-                  <a class="order-online" href="#">Order Online</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-            
-                  <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Chicken</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Beef</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link">Sushi</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li>
-                      
-                    </ul>
-                   
-                    
-                  </div>
-                  
-                </div>
+        <div class="container">
+          <div class="brand-logo">
+            <a class="navbar-brand" href="#"><h1>Food LLC</h1></a>
+          </div>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse menu-list" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active bold" aria-current="page" href="#">Order Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Chicken</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beef</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Sushi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">contact</a>
                 
-              </nav>
-              <div class="phone">702-504-0961</div>
+              </li>
+            </ul>
+          </div>
         </div>
-        
+      </nav>
     </header>
-    
+    <!-- START THE PRINCIPAL CONTENT AND JUMBOTRON-->
 
-    <h1 class="title">
-        OUR MENU
-    </h1>
-
-    <div class="container-cards">
-
-        <!-- card number one-->
-
-        <div  class="card card-1" >
-            <div class="card-title">
-                <h2 class="cat-title">Chicken</h2>
+    <div class="main">
+      <h1 class="title-1">Our Menu</h1>
+      <div class="contentbox col-11 text-center">
+        <div class="row">
+          <div class="card-block col-6 col">
+            <div class="card ">
+              <h3 class="card-header">Chicken</h3>
+              <div class="card-body">
+                <h5 class="card-title">Special Chicken Dishes</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores officiis soluta qui quod. Dignissimos, autem!  content.</p>
+                <a href="#" class=" btn-link">Go somewhere</a>
+              </div>
             </div>
-            <div class="description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam 
-                    nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores
-                     officiis soluta qui quod. Dignissimos, autem!
-                </p>
+          </div>
+          <div class=" card-block   col-6 col">
+            <div class="card">
+              <h3 class="card-header">Beef</h3>
+              <div class="card-body">
+                <h5 class="card-title">The Home beef Dishes</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores officiis soluta qui quod. Dignissimos, autem! content.</p>
+                <a href="#" class=" btn-link">Go somewhere</a>
+              </div>
             </div>
+          </div>
+          <div class=" card-block  col  ">
+            <div class="card">
+              <h3 class="card-header">Sushi</h3>
+              <div class="card-body">
+                <h5 class="card-title">100% Hand Made Sushi</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores officiis soluta qui quod. Dignissimos, autem! content.</p>
+                <a href="#" class=" btn-link">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
         
-        <!-- card number two-->
 
-        <div class="card card-2" >
-            <div class="card-title">
-                <h2 class="cat-title">Beef</h2>
-            </div>
-            <div class="description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam 
-                    nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores
-                     officiis soluta qui quod. Dignissimos, autem!
-                </p>
-            </div>
-        </div>
-        <!-- card number three-->
-
-        <div class="card card-3" >
-            <div class="card-title">
-                <h2 class="cat-title">sushi</h2>
-            </div>
-            <div class="description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Magni nihil cumque aspernatur, debitis sint labore aliquam ipsam 
-                    nesciunt quisquam, necessitatibus, incidunt dolores blanditiis asperiores
-                     officiis soluta qui quod. Dignissimos, autem!
-                </p>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-         
-        <div class="footer clearfix">
-                    <p class="copyright">@ 2023 All Right Reserved Restaurant LLC </p>
-        </div>
-
-        
-        <script src="../js/bootstrap.bundle.min.js"></script>
-
-
-
-
+  </div>
+  <div class="footer">
+    <p class="copyright">2023 All Right Reserved Food LLC</p>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-    
-
-    
-</body>
-</html>
