@@ -50,6 +50,27 @@ body{
 }
 
 
+/* ESTILOS DE LA NAVEGACION */
+
+.navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
 
 .container-cards{
     width: 90%;
