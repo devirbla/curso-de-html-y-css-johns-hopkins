@@ -52,6 +52,12 @@ body{
 
 /* ESTILOS DE LA NAVEGACION */
 
+.navigation .nav li a{
+    display: block;
+    margin: 0px 18px;
+
+}
+
 .navbar a {
     color: white;
     padding: 14px 16px;
